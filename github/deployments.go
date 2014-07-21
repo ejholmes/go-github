@@ -12,6 +12,7 @@ type Deployment struct {
 	Description *string                 `json:"description,omitempty"`
 	Name        *string                 `json:"name,omitempty"`
 	Payload     *map[string]interface{} `json:"payload,omitempty"`
+	Creator     *User                   `json:"creator,omitempty"`
 	Repository  *Repository             `json:"repository,omitempty"`
 }
 
