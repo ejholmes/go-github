@@ -18,6 +18,7 @@ type Deployment struct {
 type DeploymentStatus struct {
 	ID         *int        `json:"id,omitempty"`
 	State      *string     `json:"state,omitempty"`
+	TargetURL  *string     `json:"target_url,omitempty"`
 	Deployment *Deployment `json:"deployment,omitempty"`
 	Repository *Repository `json:"repository,omitempty"`
 }
